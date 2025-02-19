@@ -5,6 +5,34 @@ import { Button } from '../ui/button'
 import Item from './Item'
 import { Progress } from '../ui/progress'
 
+const sidebarLink = [
+    {
+        label: "My drive",
+        icon: Tablet,
+        path: "/"
+    },
+    {
+        label: "Starred",
+        icon: Star,
+        path: "/starred"
+    },
+    {
+        label: "Recent",
+        icon: Clock,
+        path: "/recent"
+    },
+    {
+        label: "Trash",
+        icon: Trash,
+        path: "/trash"
+    },
+    {
+        label: "Storage",
+        icon: Cloud,
+        path: "/storage"
+    }
+]
+
 const Sidebar = () => {
     return (
         <div className='h-[90vh] w-72 fixed top-[10vh] left-0 z-30 bg-[#f6f9fc] dark:bg-[#1f1f1f] border-r'>
@@ -33,31 +61,3 @@ const Sidebar = () => {
 }
 
 export default Sidebar
-
-const sidebarLink = [
-    {
-        label: "My drive",
-        icon: Tablet,
-        path: "/"
-    },
-    {
-        label: "Starred",
-        icon: Star,
-        path: "/starred"
-    },
-    {
-        label: "Recent",
-        icon: Clock,
-        path: "/recent"
-    },
-    {
-        label: "Trash",
-        icon: Trash,
-        path: "/trash"
-    },
-    {
-        label: "Storage",
-        icon: Cloud,
-        path: "/storage"
-    }
-]

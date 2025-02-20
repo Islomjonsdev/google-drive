@@ -1,5 +1,9 @@
-import { SignUp } from '@clerk/nextjs'
+"use client"
 
+import { SignUp } from '@clerk/nextjs'
+import { dark, shadesOfPeople } from '@clerk/themes'
+import { useTheme } from "next-themes"
 export default function Page() {
-  return <SignUp />
+  const { resolvedTheme } = useTheme()
+  return <SignUp appearance={{ baseTheme: resolvedTheme === "dark" ? dark : shadesOfPeople }} />
 }

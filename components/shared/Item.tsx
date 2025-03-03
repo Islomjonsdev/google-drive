@@ -4,7 +4,7 @@ import React from 'react'
 interface ItemProps {
     icon: LucideIcon,
     label: string,
-    path: string
+    path?: string
 }
 
 const Item = ({ icon: Icon, label }: ItemProps) => {

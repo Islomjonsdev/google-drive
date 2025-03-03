@@ -51,8 +51,8 @@ const Sidebar = () => {
                     </PopoverContent>
                 </Popover>
                 <div className='flex flex-col space-y-6 mt-8'>
-                    {sidebarLink?.map((links) => (
-                        <Link href={links?.path} key={links?.path}>
+                    {sidebarLink?.map(links => (
+                        <Link href={links.path} key={links.path}>
                             <Item icon={links.icon} label={links.label} />
                         </Link>
                     ))}

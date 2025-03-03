@@ -37,7 +37,7 @@ const UserBox = () => {
 
           <DropdownMenuSeparator />
 
-          <DropdownMenuItem className="w-full cursor-pointer text-muted-foreground" asChild onClick={() => signOut(router.push("/sign-in"))}>
+          <DropdownMenuItem className="w-full cursor-pointer text-muted-foreground" asChild onClick={() => signOut(() => router.push("/sign-in"))}>
               <div role="button">
                   Log out
               </div>
